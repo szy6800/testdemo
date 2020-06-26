@@ -45,7 +45,7 @@ class JobSpider(scrapy.Spider):
         # 工作类型
         item['work_type'] = 1
         #工资类型
-        item['salary_type'] = 2
+        item['salary_type'] = 3
         try:
             # 最小薪资
             min_salary_str = response.xpath("//*[@class='salary']/p/text()").get()
